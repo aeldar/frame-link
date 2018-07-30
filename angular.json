@@ -121,6 +121,46 @@
           }
         }
       }
+    },
+    "frame-link": {
+      "root": "projects/frame-link",
+      "sourceRoot": "projects/frame-link/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/frame-link/tsconfig.lib.json",
+            "project": "projects/frame-link/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/frame-link/ng-package.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/frame-link/src/test.ts",
+            "tsConfig": "projects/frame-link/tsconfig.spec.json",
+            "karmaConfig": "projects/frame-link/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/frame-link/tsconfig.lib.json",
+              "projects/frame-link/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "frame-link-demo"
