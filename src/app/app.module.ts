@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { FrameLinkModule } from 'frame-link';
+import { FrameLinkModule } from '@aeldar/frame-link';
 
 @NgModule({
   declarations: [

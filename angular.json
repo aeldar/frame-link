@@ -122,38 +122,38 @@
         }
       }
     },
-    "frame-link": {
-      "root": "projects/frame-link",
-      "sourceRoot": "projects/frame-link/src",
+    "@aeldar/frame-link": {
+      "root": "projects/aeldar/frame-link",
+      "sourceRoot": "projects/aeldar/frame-link/src",
       "projectType": "library",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/frame-link/tsconfig.lib.json",
-            "project": "projects/frame-link/ng-package.json"
+            "tsConfig": "projects/aeldar/frame-link/tsconfig.lib.json",
+            "project": "projects/aeldar/frame-link/ng-package.json"
           },
           "configurations": {
             "production": {
-              "project": "projects/frame-link/ng-package.prod.json"
+              "project": "projects/aeldar/frame-link/ng-package.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/frame-link/src/test.ts",
-            "tsConfig": "projects/frame-link/tsconfig.spec.json",
-            "karmaConfig": "projects/frame-link/karma.conf.js"
+            "main": "projects/aeldar/frame-link/src/test.ts",
+            "tsConfig": "projects/aeldar/frame-link/tsconfig.spec.json",
+            "karmaConfig": "projects/aeldar/frame-link/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/frame-link/tsconfig.lib.json",
-              "projects/frame-link/tsconfig.spec.json"
+              "projects/aeldar/frame-link/tsconfig.lib.json",
+              "projects/aeldar/frame-link/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -163,5 +163,5 @@
       }
     }
   },
-  "defaultProject": "frame-link"
+  "defaultProject": "@aeldar/frame-link"
 }

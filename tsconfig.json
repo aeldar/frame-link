@@ -18,11 +18,11 @@
       "dom"
     ],
     "paths": {
-      "frame-link": [
-        "dist/frame-link"
+      "@aeldar/frame-link": [
+        "dist/aeldar/frame-link"
       ],
-      "frame-link/*": [
-        "dist/frame-link/*"
+      "@aeldar/frame-link/*": [
+        "dist/aeldar/frame-link/*"
       ]
     }
   }

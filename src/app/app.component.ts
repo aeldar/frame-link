@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FrameLinkService } from 'frame-link';
+import { FrameLinkService } from '@aeldar/frame-link';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +10,6 @@ export class AppComponent {
   title = 'frame-link-demo';
 
   constructor(private frameLinkService: FrameLinkService) {
-    
+
   }
 }
