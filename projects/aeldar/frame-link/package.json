@@ -1,6 +1,11 @@
 {
   "name": "@aeldar/frame-link",
   "version": "0.0.1",
+  "description": "Angular X service to communicate between iframes",
+  "license": "MIT",
+  "private": false,
+  "author": "Eldar Aliyev <eldar.aliyev8@gmail.com>",
+  "repository": "git@github.com:aeldar/frame-link.git",
   "peerDependencies": {
     "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
     "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
