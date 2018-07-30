@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FrameLinkService } from 'frame-link';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'frame-link-demo';
+
+  constructor(private frameLinkService: FrameLinkService) {
+    
+  }
 }
