@@ -1,11 +1,17 @@
 import { TestBed, inject } from '@angular/core/testing';
 
-import { FrameLinkService } from './frame-link.service';
+import { FrameLinkService, FrameLinkServiceConfig } from './frame-link.service';
 
 describe('FrameLinkService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [FrameLinkService]
+      providers: [
+        FrameLinkService,
+        {
+          provide: FrameLinkServiceConfig,
+          useValue: { appId: 'hello' },
+        },
+      ]
     });
   });
 
