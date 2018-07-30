@@ -4,3 +4,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## FrameLinkModule
 See docs [here](projects/aeldar/frame-link)
+
+### Build the lib
+```
+yarn build --prod
+```
