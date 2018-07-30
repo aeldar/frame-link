@@ -1,10 +1,9 @@
 import { NgModule } from '@angular/core';
-import { FrameLinkComponent } from './frame-link.component';
 
 @NgModule({
   imports: [
   ],
-  declarations: [FrameLinkComponent],
-  exports: [FrameLinkComponent]
+  declarations: [],
+  exports: [],
 })
 export class FrameLinkModule { }
